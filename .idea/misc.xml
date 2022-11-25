@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/TRABAJOS_UDI/MinTIC/Ciclo_IVB/Ejercicioprueba/app/src/main/res/layout/activity_home.xml" value="0.253125" />
+        <entry key="..\:/TRABAJOS_UDI/MinTIC/Ciclo_IVB/Ejercicioprueba/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
         <entry key="..\:/TRABAJOS_UDI/MinTIC/Ciclo_IVB/Ejercicioprueba/app/src/main/res/layout/activity_main.xml" value="0.24010416666666667" />
+        <entry key="..\:/TRABAJOS_UDI/MinTIC/Ciclo_IVB/Ejercicioprueba/app/src/main/res/layout/activity_signup.xml" value="0.253125" />
         <entry key="..\:/TRABAJOS_UDI/MinTIC/Ciclo_IVB/Ejercicioprueba/app/src/main/res/layout/login.xml" value="0.25416666666666665" />
         <entry key="..\:/TRABAJOS_UDI/MinTIC/Ciclo_IVB/Ejercicioprueba/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2265" />
       </map>
