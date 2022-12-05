@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Ejercicio prueba</string>
     <string name="enviar">Enviar</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="car">Car</string>
+    <string name="settings">Settings</string>
 </resources>
