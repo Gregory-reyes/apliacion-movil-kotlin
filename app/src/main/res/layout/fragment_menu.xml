@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".View.ui.fragments.MenuFragment"
+        android:background="@color/white"
+>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/theme_gradients_background">
+            <ImageView android:layout_width="111dp"
+                       android:layout_height="120dp"
+                       android:layout_alignParentRight="true"
+                       android:src="@mipmap/ic_launcher">
+            </ImageView>
+            <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="115dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="100dp"
+                    android:gravity="center"
+                    android:text="!Bienvenido¡"
+                    android:textColor="@color/black"
+                    android:textSize="40sp"
+                    android:textStyle="bold">
+
+            </TextView>
+        </RelativeLayout>
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:columnCount="3"
+                    android:rowCount="3">
+                <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="0"
+                        app:cardElevation="5dp"
+                        android:layout_margin="10dp"
+                        android:id="@+id/fragBolsos">
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:padding="10dp">
+                        <ImageView
+                                android:id="@+id/nav_bolsos"
+                                android:layout_width="97dp"
+                                android:layout_height="105dp"
+                                android:src="@drawable/bolsos">
+                        </ImageView>
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:text="Bolsos">
+
+                        </TextView>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_row="0"
+                        app:cardElevation="5dp"
+                        android:layout_margin="10dp"
+                        android:id="@+id/fragPerfumes">
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:padding="10dp">
+                        <ImageView
+                                android:id="@+id/nav_perfumes"
+                                android:layout_width="97dp"
+                                android:layout_height="105dp"
+                                android:src="@drawable/perfume">
+                        </ImageView>
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:text="Perfumes">
+
+                        </TextView>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_row="0"
+                        app:cardElevation="5dp"
+                        android:layout_margin="10dp"
+                        android:id="@+id/fragCamisas">
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:padding="10dp">
+                        <ImageView
+                                android:id="@+id/nav_camisas"
+                                android:layout_width="97dp"
+                                android:layout_height="105dp"
+                                android:src="@drawable/camisas">
+                        </ImageView>
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:text="Camisas">
+
+                        </TextView>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="1"
+                        app:cardElevation="5dp"
+                        android:layout_margin="10dp"
+                        android:id="@+id/fragGorras">
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:padding="10dp">
+                        <ImageView
+                                android:id="@+id/nav_gorras"
+                                android:layout_width="97dp"
+                                android:layout_height="105dp"
+                                android:src="@drawable/gorras">
+                        </ImageView>
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:text="Gorras">
+
+                        </TextView>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_row="1"
+                        app:cardElevation="5dp"
+                        android:layout_margin="10dp"
+                        android:id="@+id/fragBilleteras">
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:padding="10dp">
+                        <ImageView
+                                android:id="@+id/nav_billeteras"
+                                android:layout_width="97dp"
+                                android:layout_height="105dp"
+                                android:src="@drawable/billeteras">
+                        </ImageView>
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:text="Billeteras">
+
+                        </TextView>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_row="1"
+                        app:cardElevation="5dp"
+                        android:layout_margin="10dp"
+                        android:id="@+id/fragCorreas">
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:padding="10dp">
+                        <ImageView
+                                android:id="@+id/nav_correas"
+                                android:layout_width="97dp"
+                                android:layout_height="105dp"
+                                android:src="@drawable/correas">
+                        </ImageView>
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:text="Correas">
+
+                        </TextView>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="2"
+                        app:cardElevation="5dp"
+                        android:layout_margin="10dp"
+                        android:id="@+id/fragJeans">
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:padding="10dp">
+                        <ImageView
+                                android:id="@+id/nav_jeans"
+                                android:layout_width="97dp"
+                                android:layout_height="105dp"
+                                android:src="@drawable/jeans">
+                        </ImageView>
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:text="Jeans">
+
+                        </TextView>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_row="2"
+                        app:cardElevation="5dp"
+                        android:layout_margin="10dp"
+                        android:id="@+id/fragCalzado">
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:padding="10dp">
+                        <ImageView
+                                android:id="@+id/nav_calzado"
+                                android:layout_width="97dp"
+                                android:layout_height="105dp"
+                                android:src="@drawable/calzado">
+                        </ImageView>
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:text="Calzado">
+
+                        </TextView>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_row="2"
+                        app:cardElevation="5dp"
+                        android:layout_margin="10dp"
+                        android:id="@+id/fragAccesorios">
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:padding="10dp">
+                        <ImageView
+                                android:id="@+id/nav_accesorios"
+                                android:layout_width="97dp"
+                                android:layout_height="105dp"
+                                android:src="@drawable/accesorios">
+                        </ImageView>
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:text="Accesorios">
+
+                        </TextView>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

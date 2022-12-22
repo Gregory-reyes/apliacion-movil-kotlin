@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav_graph"
+            app:startDestination="@id/menuFragment">
+
+    <fragment android:id="@+id/menuFragment" android:name="com.example.ejercicioprueba.View.ui.fragments.MenuFragment"
+              android:label="fragment_menu" tools:layout="@layout/fragment_menu">
+        <action android:id="@+id/action_menuFragment_to_bolsosFragment" app:destination="@id/bolsosFragment"/>
+        <action android:id="@+id/action_menuFragment_to_perfumesFragment" app:destination="@id/perfumesFragment"/>
+        <action android:id="@+id/action_menuFragment_to_camisasFragment" app:destination="@id/camisasFragment"/>
+        <action android:id="@+id/action_menuFragment_to_gorrasFragment" app:destination="@id/gorrasFragment"/>
+        <action android:id="@+id/action_menuFragment_to_billeterasFragment" app:destination="@id/billeterasFragment"/>
+        <action android:id="@+id/action_menuFragment_to_jeansFragment" app:destination="@id/jeansFragment"/>
+        <action android:id="@+id/action_menuFragment_to_calzadoFragment" app:destination="@id/calzadoFragment"/>
+        <action android:id="@+id/action_menuFragment_to_accesoriosFragment" app:destination="@id/accesoriosFragment"/>
+        <action android:id="@+id/action_menuFragment_to_correasFragment" app:destination="@id/correasFragment"/>
+    </fragment>
+    <fragment android:id="@+id/bolsosFragment"
+              android:name="com.example.ejercicioprueba.View.ui.fragments.BolsosFragment"
+              android:label="fragment_bolsos" tools:layout="@layout/fragment_bolsos"/>
+    <fragment android:id="@+id/perfumesFragment"
+              android:name="com.example.ejercicioprueba.View.ui.fragments.PerfumesFragment"
+              android:label="fragment_perfumes" tools:layout="@layout/fragment_perfumes"/>
+    <fragment android:id="@+id/camisasFragment"
+              android:name="com.example.ejercicioprueba.View.ui.fragments.CamisasFragment"
+              android:label="fragment_camisas" tools:layout="@layout/fragment_camisas"/>
+    <fragment android:id="@+id/gorrasFragment"
+              android:name="com.example.ejercicioprueba.View.ui.fragments.GorrasFragment"
+              android:label="fragment_gorras" tools:layout="@layout/fragment_gorras"/>
+    <fragment android:id="@+id/billeterasFragment"
+              android:name="com.example.ejercicioprueba.View.ui.fragments.BilleterasFragment"
+              android:label="fragment_billeteras" tools:layout="@layout/fragment_billeteras"/>
+    <fragment android:id="@+id/correasFragment"
+              android:name="com.example.ejercicioprueba.View.ui.fragments.CorreasFragment"
+              android:label="fragment_correas" tools:layout="@layout/fragment_correas"/>
+    <fragment android:id="@+id/jeansFragment" android:name="com.example.ejercicioprueba.View.ui.fragments.JeansFragment"
+              android:label="fragment_jeans" tools:layout="@layout/fragment_jeans"/>
+    <fragment android:id="@+id/calzadoFragment"
+              android:name="com.example.ejercicioprueba.View.ui.fragments.CalzadoFragment"
+              android:label="fragment_calzado" tools:layout="@layout/fragment_calzado"/>
+    <fragment android:id="@+id/accesoriosFragment"
+              android:name="com.example.ejercicioprueba.View.ui.fragments.AccesoriosFragment"
+              android:label="fragment_accesorios" tools:layout="@layout/fragment_accesorios"/>
+</navigation>
