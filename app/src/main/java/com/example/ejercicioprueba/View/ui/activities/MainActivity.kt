@@ -12,8 +12,8 @@ import com.example.ejercicioprueba.View.ui.activities.LoginActivity
 import com.example.ejercicioprueba.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    lateinit var binding: ActivityMainBinding
-    lateinit var handler: Handler
+    lateinit var binding: ActivityMainBinding //Activity permite utilizar la capa de animación
+    lateinit var handler: Handler //Manipular los loop
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

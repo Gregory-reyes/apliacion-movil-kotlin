@@ -17,7 +17,7 @@ class LoginActivity:AppCompatActivity() {
         setContentView(R.layout.activity_login)
         //binding = ActivityMainBinding.inflate(layoutInflater)
         //setContentView(binding.root)
-
+    //Configuración de los evento de click de nuestro layout
         signup= findViewById(R.id.register1)
         signup.setOnClickListener {
             startActivity(Intent(this,SignUpActivity::class.java))

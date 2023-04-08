@@ -12,7 +12,7 @@ class HomeActivity:AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
     }
-
+//Funcion definida para la creación del menu
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         val inflater: MenuInflater = menuInflater
         inflater.inflate(R.menu.nav_tienda,menu)
