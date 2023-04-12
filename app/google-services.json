@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "128574304201",
+    "project_id": "app-wife",
+    "storage_bucket": "app-wife.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:128574304201:android:a5e88189a89a8602708218",
+        "android_client_info": {
+          "package_name": "com.example.ejercicioprueba"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "128574304201-62kp3fjpqk6hs0vkupkl12vj6061sq0f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwG3W1nt14SbR2yUOfJLRLLMIlYzW68TM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "128574304201-62kp3fjpqk6hs0vkupkl12vj6061sq0f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

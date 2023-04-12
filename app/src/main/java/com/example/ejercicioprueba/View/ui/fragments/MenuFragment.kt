@@ -20,9 +20,10 @@ class MenuFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_menu, container, false)
     }
 
+    //Creando los evento para cada uno de los fragmentos
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val cardAccesorios= view.findViewById<CardView>(R.id.fragAccesorios)
+        val cardAccesorios= view.findViewById<CardView>(R.id.fragAccesorios) //CardView hace refenrencia para que evento se realice en el recuadro
         cardAccesorios.setOnClickListener {
             findNavController().navigate(R.id.action_menuFragment_to_accesoriosFragment)
         }
