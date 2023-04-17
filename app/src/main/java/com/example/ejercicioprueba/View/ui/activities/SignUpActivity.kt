@@ -19,14 +19,16 @@ class SignUpActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signup)
+
 //Declaramos las variable llamandolas del activity_login
         firebaseAuth = Firebase.auth
         register= findViewById(R.id.register2)
+
         val name = findViewById<EditText>(R.id.signupname)
         val celular = findViewById<EditText>(R.id.signupphone)
         val email = findViewById<EditText>(R.id.signupemail)
         val password1 = findViewById<EditText>(R.id.signuppassword1)
-        //val password2 = findViewById<EditText>(R.id.signuppassword2)
+        val password2 = findViewById<EditText>(R.id.signuppassword2)
 
         register.setOnClickListener {
             //startActivity(Intent(this,LoginActivity::class.java))
