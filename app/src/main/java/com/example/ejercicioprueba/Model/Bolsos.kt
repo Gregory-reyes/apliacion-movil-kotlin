@@ -1,10 +1,12 @@
 package com.example.ejercicioprueba.Model
 
-import java.io.Serializable
+data class Bolsos (
+    var url: String,
+    var description: String,
+    var price: String,
+    var tittle: String
+)
 
-class Bolsos: Serializable {
-    lateinit var category: String
-    lateinit var description: String
-    lateinit var price: Number
-    lateinit var tittle: String
-}
+
+
+
