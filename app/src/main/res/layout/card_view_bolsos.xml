@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/cvBolsos"
+        android:id="@+id/cvBolso"
         app:cardBackgroundColor="@color/color_fodolightblue"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -11,49 +11,42 @@
             android:padding="16dp"
     >
         <ImageView
-                android:id="@+id/ivBolsos"
+                android:id="@+id/imgBolso"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:src="@drawable/bolsos">
         </ImageView>
         <TextView
-                android:id="@+id/tittleBolsos"
-                android:layout_width="160dp"
-                android:layout_height="60dp"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="140dp"
-                android:layout_toEndOf="@+id/ivBolsos"
+                android:id="@+id/tittleBolso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="Titulo"
                 android:textColor="@color/black"
-                android:textSize="30dp"
-                android:textStyle="bold" android:layout_marginTop="5dp" android:layout_alignParentTop="true"
-                android:layout_marginLeft="0dp" android:layout_marginStart="0dp">
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/imgBolso">
         </TextView>
         <TextView
-                android:id="@+id/descriptionBolsos"
-                android:layout_width="160dp"
-                android:layout_height="60dp"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="15dp"
-                android:layout_toEndOf="@+id/ivBolsos"
-                android:text="Decripción"
+                android:id="@+id/descriptionBolso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descripción"
                 android:textColor="@color/black"
-                android:textSize="30dp"
-                android:textStyle="bold" android:layout_marginTop="30dp" android:layout_alignParentTop="true"
-                android:layout_marginLeft="0dp" android:layout_marginStart="0dp">
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/imgBolso"
+                android:layout_below="@id/tittleBolso">
         </TextView>
         <TextView
-                android:id="@+id/priceBolsos"
-                android:layout_width="160dp"
-                android:layout_height="60dp"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="140dp"
-                android:layout_toEndOf="@+id/ivBolsos"
+                android:id="@+id/priceBolso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="Precio"
                 android:textColor="@color/black"
-                android:textSize="30dp"
-                android:textStyle="bold" android:layout_marginTop="55dp" android:layout_alignParentTop="true"
-                android:layout_marginLeft="0dp" android:layout_marginStart="0dp">
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/imgBolso"
+                android:layout_below="@id/descriptionBolso">
         </TextView>
 
     </RelativeLayout>

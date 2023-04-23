@@ -19,8 +19,8 @@ class repository {
                 val description=document.getString("description")
                 val price=document.getString("price")
                 val tittle=document.getString("tittle")
-                val bolsos=Bolsos(url!!,description!!,price!!,tittle!!)
-                listData.add(bolsos)
+                val bolso=Bolsos(url!!,description!!,price!!,tittle!!)
+                listData.add(bolso)
             }
             mutableLiveData.value=listData
         }

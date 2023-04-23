@@ -9,7 +9,6 @@
         tools:context=".View.ui.fragments.BolsosFragment"
         android:background="@color/white"
 >
-
         <RelativeLayout android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="32dp"
