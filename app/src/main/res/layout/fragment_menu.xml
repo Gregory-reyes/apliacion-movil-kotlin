@@ -345,7 +345,7 @@
                                 android:textSize="18sp"
                                 android:textStyle="bold"
                                 android:textAlignment="center"
-                                android:text="Accesorios">
+                                android:text="Localizame">
 
                         </TextView>
 

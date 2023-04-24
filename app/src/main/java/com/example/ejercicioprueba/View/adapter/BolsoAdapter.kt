@@ -22,8 +22,8 @@ class BolsoAdapter(val context: Context): RecyclerView.Adapter<BolsoAdapter.View
 
 
     override fun onCreateViewHolder(ViewGroup: ViewGroup, i: Int): ViewHolder {//contenedor de los datos
-        val view= LayoutInflater.from(ViewGroup.context).inflate(R.layout.card_view_bolsos, ViewGroup, false)//traemos el layout por el cardview
-        return ViewHolder(view) //nos trae la vista
+        val v= LayoutInflater.from(ViewGroup.context).inflate(R.layout.card_view_bolsos, ViewGroup, false)//traemos el layout por el cardview
+        return ViewHolder(v) //nos trae la vista
     }
 
     override fun onBindViewHolder(viewHolder: ViewHolder, i: Int) { //traemos la informción de la lista de bolsos
@@ -37,12 +37,12 @@ class BolsoAdapter(val context: Context): RecyclerView.Adapter<BolsoAdapter.View
 
    inner class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
         fun bindWew(bolso: Bolsos){
-            val img= itemView.findViewById<ImageView>(R.id.imgBolso)
-            Picasso.get().load(bolso.url).into(img)
+
+            Picasso.get().load(bolso.url).into(itemView.findViewById<ImageView>(R.id.imgBolso))
 
             itemView.findViewById<TextView>(R.id.tittleBolso).text=bolso.tittle
             itemView.findViewById<TextView>(R.id.descriptionBolso).text=bolso.description
-            itemView.findViewById<TextView>(R.id.priceBolso).text=bolso.price
+            itemView.findViewById<TextView>(R.id.priceBolso).text=bolso.price.toString()
 
             }
         }

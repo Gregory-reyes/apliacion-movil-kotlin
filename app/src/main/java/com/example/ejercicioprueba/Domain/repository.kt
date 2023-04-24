@@ -17,9 +17,9 @@ class repository {
             for(document in result){//Recorrer la lista información de la colección
                 val url=document.getString("url")
                 val description=document.getString("description")
-                val price=document.getString("price")
+                val price=document.getLong("price")?.toInt()
                 val tittle=document.getString("tittle")
-                val bolso=Bolsos(url!!,description!!,price!!,tittle!!)
+                val bolso=Bolsos(url,description,price,tittle)
                 listData.add(bolso)
             }
             mutableLiveData.value=listData

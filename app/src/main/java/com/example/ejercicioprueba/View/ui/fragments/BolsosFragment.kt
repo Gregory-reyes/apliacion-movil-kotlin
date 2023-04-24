@@ -29,6 +29,7 @@ class BolsosFragment : Fragment() {
         adapter= BolsoAdapter(requireContext())
         recyclerBolso.layoutManager= LinearLayoutManager(context)
         recyclerBolso.adapter=adapter //asignamos el adaptador
+        observeData()
 
         return view
     }
