@@ -1,10 +1,16 @@
 package com.example.ejercicioprueba.View.ui.fragments
 
+import android.annotation.SuppressLint
+import android.content.pm.PackageManager
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import androidx.navigation.ActivityNavigatorExtras
 import com.example.ejercicioprueba.R
 import com.google.android.gms.maps.GoogleMap
 import org.osmdroid.views.MapView
@@ -12,6 +18,7 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
+import com.google.firebase.auth.FirebaseAuth
 import org.osmdroid.tileprovider.tilesource.TileSourceFactory
 import org.osmdroid.util.GeoPoint
 import org.osmdroid.views.overlay.Marker
@@ -25,7 +32,12 @@ import org.osmdroid.library.BuildConfig
  * create an instance of this fragment.
  */
 class AccesoriosFragment : Fragment(), OnMapReadyCallback {
+    lateinit var firebaseAuth: FirebaseAuth
     lateinit var googleMap: GoogleMap
+    companion object{
+        const val REQUEST_CODE_LOCATION=0
+    }
+
     lateinit var mapView: MapView
 
     override fun onCreateView(
@@ -72,5 +84,31 @@ class AccesoriosFragment : Fragment(), OnMapReadyCallback {
             this.googleMap = it
             map.addMarker(MarkerOptions().position(colombia).title("Marker in Colombia"))
         }
+        enableMyLocation()
     }
-}
+
+    @SuppressLint("MissingPermission")
+    fun enableMyLocation(){
+        if(!::googleMap.isInitialized)return
+         if (IsLocationPermissionGranted()){
+             googleMap.isMyLocationEnabled=true
+         }else{
+             requestLocationPermission()
+         }
+    }
+    fun IsLocationPermissionGranted()=ContextCompat.checkSelfPermission(
+        this.requireContext(),
+        android.Manifest.permission.ACCESS_FINE_LOCATION
+    )==PackageManager.PERMISSION_GRANTED
+
+    fun requestLocationPermission(){
+        if (ActivityCompat.shouldShowRequestPermissionRationale(this.requireActivity(),android.Manifest.permission.ACCESS_FINE_LOCATION)){
+            Toast.makeText(this.requireContext(),"Activar los permisos de ubicación",Toast.LENGTH_SHORT).show()
+            }else{
+                ActivityCompat.requestPermissions(this.requireActivity(), arrayOf(android.Manifest.permission.ACCESS_FINE_LOCATION),
+                    com.example.ejercicioprueba.View.ui.fragments.AccesoriosFragment.REQUEST_CODE_LOCATION)
+            }
+
+        }
+    }
+
