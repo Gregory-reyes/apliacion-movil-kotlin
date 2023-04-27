@@ -27,7 +27,7 @@ class SignUpActivity: AppCompatActivity() {
 //Declaramos las variable llamandolas del activity_login
         firebaseAuth = Firebase.auth
         //database = FirebaseDatabase.getInstance()
-        databaseReference = databaseReference.database.reference
+        databaseReference = databaseReference.database.reference.child("User")
 
         register= findViewById(R.id.register2)
 
